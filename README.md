@@ -42,7 +42,7 @@ Whether you're monitoring a smart home, an agricultural deployment, or an indust
 <div align="center">
   <p><em>Dashboard Preview</em></p>
   <!-- Add a dashboard preview image when available -->
-  <!-- <img src="docs/images/dashboard_preview.png" alt="Dashboard Preview" width="800"/> -->
+  <img src="docs/images/dashboard_preview.png" alt="Dashboard Preview" width="800"/>
 </div>
 
 ## 🚦 Quick Start
