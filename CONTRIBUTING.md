@@ -1,6 +1,6 @@
 # Contributing to SmartSense
 
-First off, thank you for considering contributing to SmartSense! It's people like you that make SmartSense such a great tool. We welcome contributions from everyone, whether it's a bug report, feature suggestion, code improvement, or documentation enhancement.
+First off, thank you for considering contributing to SmartSense! Its people like you that make SmartSense such a great tool. We welcome contributions from everyone, whether its a bug report, feature suggestion, code improvement, or documentation enhancement.
 
 This document provides guidelines and instructions for contributing to the SmartSense project. Following these guidelines helps maintain code quality and streamlines the contribution process.
 
@@ -164,38 +164,30 @@ All code contributions must include appropriate tests:
    - Address any review comments and push additional commits to your branch
    - Once approved, a maintainer will merge your PR
 
-5. **After PR approval**:
-   - Your changes will be merged into the main branch
-   - You can delete your branch if you want
-
 ## Security Policy
 
-### Reporting Security Issues
+Please refer to our [Security Policy](.github/SECURITY.md) for details on:
 
-If you discover a security vulnerability, please do **NOT** open a public issue. Instead:
-
-1. Email us at [security@example.com](mailto:security@example.com) with details
-2. Include steps to reproduce the vulnerability
-3. Allow time for us to address the issue before disclosing it publicly
-
-We take security issues seriously and will work quickly to address any vulnerabilities.
+- Reporting security vulnerabilities
+- Supported versions
+- Security best practices
+- Update and patch policies
 
 ## Community Guidelines
 
 To foster a positive and inclusive community, please:
 
-- **Be respectful**: Treat everyone with respect and kindness, regardless of their background or experience level
-- **Be constructive**: Offer constructive feedback and focus on the ideas, not the person presenting them
-- **Stay on topic**: Keep discussions relevant to SmartSense development
-- **Help others learn**: If you have expertise, share it with others who are learning
-- **Give credit**: Acknowledge others' contributions and ideas
-- **Follow the code of conduct**: Adhere to our community standards
+- **Be respectful**: Treat everyone with respect and kindness
+- **Be constructive**: Offer constructive feedback
+- **Stay on topic**: Keep discussions relevant to SmartSense
+- **Help others learn**: Share your expertise
+- **Give credit**: Acknowledge others contributions
 
 ### Communication Channels
 
-- **GitHub Issues**: For bug reports, feature requests, and specific technical discussions
-- **GitHub Discussions**: For general questions, ideas, and community conversation
-- **GitHub Wiki**: For collaborative documentation
+- **GitHub Issues**: For bug reports and feature requests
+- **GitHub Discussions**: For general questions and community conversation
+- **Email**: For security reports and sensitive discussions (git@happycaps.co.uk)
 
 ## Thank You!
 
@@ -203,102 +195,4 @@ Your contributions to SmartSense help make it better for everyone. We appreciate
 
 ---
 
-This contribution guide was last updated on April 29, 2025.
-
-# Contributing to SmartSense
-
-First off, thank you for considering contributing to SmartSense! It's people like you that make SmartSense such a great tool.
-
-## Code of Conduct
-
-By participating in this project, you are expected to uphold our [Code of Conduct](CODE_OF_CONDUCT.md).
-
-## How Can I Contribute?
-
-### Reporting Bugs
-
-This section guides you through submitting a bug report for SmartSense. Following these guidelines helps maintainers understand your report, reproduce the behavior, and find related reports.
-
-* Use the GitHub issue search — check if the issue has already been reported.
-* Check if the issue has been fixed — try to reproduce it using the latest `main` branch.
-* Isolate the problem — create a reduced test case and a live example.
-
-### Suggesting Enhancements
-
-This section guides you through submitting an enhancement suggestion for SmartSense, including completely new features and minor improvements to existing functionality.
-
-* Use the GitHub issue search — check if the enhancement has already been suggested.
-* Describe the current behavior and explain which behavior you expected to see instead and why.
-* Explain why this enhancement would be useful to most SmartSense users.
-* List some other projects where this enhancement exists.
-
-### Pull Requests
-
-* Fill in the required template
-* Follow the style guide
-* Document new code
-* End all files with a newline
-* Avoid platform-dependent code
-
-## Style Guides
-
-### Git Commit Messages
-
-* Use the present tense ("Add feature" not "Added feature")
-* Use the imperative mood ("Move cursor to..." not "Moves cursor to...")
-* Limit the first line to 72 characters or less
-* Reference issues and pull requests liberally after the first line
-* Consider starting the commit message with an applicable emoji:
-   * 🎨 `:art:` when improving the format/structure of the code
-   * ⚡️ `:zap:` when improving performance
-   * 🔥 `:fire:` when removing code or files
-   * 🐛 `:bug:` when fixing a bug
-   * 🔒 `:lock:` when dealing with security
-   * ⬆️ `:arrow_up:` when upgrading dependencies
-   * ⬇️ `:arrow_down:` when downgrading dependencies
-
-### Python Style Guide
-
-* Follow [PEP 8](https://www.python.org/dev/peps/pep-0008/)
-* Use docstrings following [Google's docstring format](https://google.github.io/styleguide/pyguide.html#38-comments-and-docstrings)
-* Run `black` and `isort` on your code before committing
-* Maintain 100% test coverage for new code
-
-## Development Environment Setup
-
-1. Fork and clone the repository
-2. Create a virtual environment: `python -m venv venv`
-3. Activate the virtual environment:
-   * Windows: `venv\Scripts\activate`
-   * Unix/MacOS: `source venv/bin/activate`
-4. Install development dependencies: `pip install -e ".[dev]"`
-5. Install pre-commit hooks: `pre-commit install`
-
-## Testing
-
-* Write tests for all new features and bug fixes
-* Run the test suite before submitting a PR: `pytest`
-* Ensure all tests pass and maintain or improve code coverage
-
-## Documentation
-
-* Update documentation for all new features and changes to existing functionality
-* Follow the documentation style guide in `docs/style_guide.md`
-
-## Project Structure
-
-```
-SmartSense/
-├── docs/               # Documentation
-├── src/                # Python source code
-│   └── smartsense/     # Main package
-├── hardware/           # Hardware designs and schematics
-├── tests/              # Test suite
-├── .github/            # GitHub specific files
-└── ...
-```
-
-## Thank You!
-
-Your contributions to open source, large or small, make projects like this possible. Thank you for taking the time to contribute.
-
+This contribution guide was last updated on May 1, 2025.

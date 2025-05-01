@@ -1,0 +1,27 @@
+# Default owners for everything in the repo.
+# Unless a later match takes precedence, these owners
+# will be requested for review when someone opens a pull request.
+*       @aaronjacobs-chelt
+
+# Core components
+/src/smartsense/core/       @aaronjacobs-chelt
+/src/smartsense/api/        @aaronjacobs-chelt
+
+# Documentation
+/docs/                      @aaronjacobs-chelt
+*.md                        @aaronjacobs-chelt
+
+# Test files
+/tests/                     @aaronjacobs-chelt
+
+# CI/CD and GitHub workflows
+/.github/workflows/         @aaronjacobs-chelt
+
+# Build and deployment
+/setup.py                   @aaronjacobs-chelt
+/setup.cfg                  @aaronjacobs-chelt
+/pyproject.toml            @aaronjacobs-chelt
+
+# Security-related files
+/SECURITY.md               @aaronjacobs-chelt
+/.github/SECURITY.md       @aaronjacobs-chelt

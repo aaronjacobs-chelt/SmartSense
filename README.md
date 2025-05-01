@@ -3,7 +3,8 @@
   <h1>SmartSense</h1>
   <p><strong>A sophisticated IoT environmental monitoring and automation platform</strong></p>
   <p>
-    <a href="https://github.com/aaronjacobs-chelt/SmartSense/actions"><img src="https://github.com/aaronjacobs-chelt/SmartSense/workflows/CI/badge.svg" alt="Build Status"></a>
+    <a href="https://github.com/aaronjacobs-chelt/SmartSense/actions/workflows/ci.yml"><img src="https://github.com/aaronjacobs-chelt/SmartSense/actions/workflows/ci.yml/badge.svg" alt="CI Status"></a>
+    <a href="https://codecov.io/gh/aaronjacobs-chelt/SmartSense"><img src="https://codecov.io/gh/aaronjacobs-chelt/SmartSense/branch/main/graph/badge.svg" alt="Code Coverage"></a>
     <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT"></a>
     <a href="https://www.python.org/downloads/"><img src="https://img.shields.io/badge/python-3.9+-blue.svg" alt="Python 3.9+"></a>
     <a href="https://aaronjacobs-chelt.github.io/SmartSense/"><img src="https://img.shields.io/badge/docs-latest-brightgreen.svg" alt="Documentation Status"></a>
