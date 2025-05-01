@@ -357,12 +357,11 @@ class HumiditySensor(VirtualSensor):
 def create_sensor_from_config(config: Dict[str, Any]) -> Sensor:
     """
     Create a sensor from a configuration dictionary.
-    
     Args:
         config: Sensor configuration dictionary
         
     Returns
-
+    """
 """
 Base sensor interface for SmartSense.
 
@@ -543,7 +542,7 @@ class Sensor(abc.ABC):
         Synchronous wrapper for the async read method.
         
         This method provides a synchronous interface to the asynchronous read
-        method, which is useful for code that can't use async/await.
+        method, which is useful for code that cant use async/await.
         
         Returns:
             Optional[SensorReading]: A sensor reading object if successful, None otherwise

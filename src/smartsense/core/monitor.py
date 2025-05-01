@@ -263,4 +263,8 @@ class SensorNetwork:
     
     async def _run_network(self) -> None:
         """Internal method to
+        ERROR WITH CODE - GET AI TO COMPLETE
+        """
+
+
 
