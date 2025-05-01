@@ -262,9 +262,51 @@ class SensorNetwork:
                 logger.info(f"Alert '{alert.name}' cleared: {field}={value}")
     
     async def _run_network(self) -> None:
-        """Internal method to
-        ERROR WITH CODE - GET AI TO COMPLETE
+        """Internal method to run the sensor network.
+        
+        This method creates and manages polling tasks for all registered sensors.
+        It runs continuously while self.running is True, creating tasks for new sensors
+        and cleaning up completed or cancelled tasks.
         """
-
-
+        try:
+            # Create initial polling tasks for all registered sensors
+            for sensor_id, sensor in self.sensors.items():
+                if self.running:  # Check if still running before creating each task
+                    task = asyncio.create_task(self._poll_sensor(sensor))
+                    self._tasks.add(task)
+                    # Set callback to remove task from set when done
+                    task.add_done_callback(self._tasks.discard)
+                    logger.debug(f"Started polling task for sensor: {sensor.name}")
+            
+            # Continue running until explicitly stopped
+            while self.running:
+                # Check for any tasks that have failed
+                for task in list(self._tasks):
+                    if task.done() and not task.cancelled():
+                        try:
+                            # This will re-raise any exception that occurred in the task
+                            task.result()
+                        except Exception as e:
+                            logger.error(f"Sensor polling task failed: {str(e)}")
+                
+                # Sleep briefly to avoid high CPU usage
+                await asyncio.sleep(0.1)
+                
+        except asyncio.CancelledError:
+            logger.info("Network run task was cancelled")
+            raise
+        except Exception as e:
+            logger.error(f"Error in network run loop: {str(e)}")
+        finally:
+            # Cleanup: cancel all polling tasks when the network stops
+            for task in self._tasks:
+                if not task.done():
+                    task.cancel()
+            
+            # Wait for all tasks to complete their cancellation
+            if self._tasks:
+                await asyncio.gather(*self._tasks, return_exceptions=True)
+                self._tasks.clear()
+                
+            logger.info("Sensor network stopped")
 
